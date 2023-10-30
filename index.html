@@ -14,19 +14,17 @@
   </head>
   <body>
     <!-- Added a header -->
-    <header
-      class="container-fluid bg-primary bg-gradient text-white text-center p-4 mb-3"
-    >
+    <header class="bg-primary bg-gradient text-white text-center p-4 mb-3">
       <h1 class="display-3">Weather Dashboard</h1>
       <p class="lead">A simple weather app to help plan what you wear!</p>
       <p id="currentDay" class="lead"></p>
     </header>
 
     <!-- Added a main class -->
-    <main class="p-3 text-center">
+    <main class="d-flex p-3">
       <div class="row align-items-start">
         <!-- Added a search function -->
-        <div class="col">
+        <div class="container-sm col">
           <div
             class="card bg-dark-subtle text-emphasis-dark bg-gradient"
             style="width: 25rem"
@@ -36,6 +34,7 @@
               <form class="d-flex" role="search">
                 <input
                   class="form-control me-2"
+                  id="userInput"
                   type="search"
                   placeholder="City Name"
                   aria-label="Search"
@@ -52,64 +51,26 @@
                   class="btn btn-secondary"
                   id="first-city-btn"
                   type="button"
-                >
-                  Button
-                </button>
-                <button
-                  class="btn btn-secondary"
-                  id="second-city-btn"
-                  type="button"
-                >
-                  Button
-                </button>
-                <button
-                  class="btn btn-secondary"
-                  id="third-city-btn"
-                  type="button"
-                >
-                  Button
-                </button>
-                <button
-                  class="btn btn-secondary"
-                  id="fourth-city-btn"
-                  type="button"
-                >
-                  Button
-                </button>
-                <button
-                  class="btn btn-secondary"
-                  id="fifth-city-btn"
-                  type="button"
-                >
-                  Button
-                </button>
-                <button
-                  class="btn btn-secondary"
-                  id="sixth-city-btn"
-                  type="button"
-                >
-                  Button
-                </button>
-                <button
-                  class="btn btn-secondary"
-                  id="seventh-city-btn"
-                  type="button"
-                >
-                  Button
-                </button>
-                <button
-                  class="btn btn-secondary"
-                  id="eighth-city-btn"
-                  type="button"
-                >
-                  Button
-                </button>
+                >Sacramento
               </div>
             </div>
           </div>
         </div>
+        <!-- Displays the selected cities current weather. -->
+        <div class="container-sm col px-5">
+            <h1 class="display-5" id="city-name">City Name:</h1>
+            <p class="lead" id="temp">Temp:</p>
+            <p class="lead" id="wind">Wind:</p>
+            <p class="lead" id="humidity">Humidity:</p>
+          </div>
 
-        <div class="col"></div>
+          <div class="col">
+            <h1 class="card-header display-5">
+              5-day Forecast
+            </h1>
+            <div class="lead" id="forecast-container"></div>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -118,7 +79,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
       integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="

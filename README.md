@@ -12,11 +12,10 @@ The Module 6 Challenge objective was to build a weather dashboard that will run 
 
 ## Comments
 
-- 
-- 
-- 
-- 
-- 
+- Presents the current and future conditions for the city that is searched.
+- Presents city name, the date, the temperature, the humidity, and the wind speed.
+- When the city is searched, it is added to the search history.
+- Displays a 5-day forecast with all the same conditions.
 
 ## Credits
 
