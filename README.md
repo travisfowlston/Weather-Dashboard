@@ -8,7 +8,7 @@ The Module 6 Challenge objective was to build a weather dashboard that will run 
 
 ![deployment-screenshot](./assets/images/deployment-screenshot.JPG)
 
-[Deployment Link]
+[Deployment Link](https://travisfowlston.github.io/Weather-Dashboard/)
 
 ## Comments
 
